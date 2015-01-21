@@ -1,0 +1,49 @@
+<div id="wrapper">
+  <div style="height: 10000px">
+  <div class="foo" style="display: inline-block;">
+    {{#if a}}
+      {{#modal-thing}}
+        The Value: {{firstName}}
+        <button {{action 'toggleFirstName'}}>
+          close
+        </button>
+      {{/modal-thing}}
+    {{/if}}
+
+    <button {{action "toggleFirstName"}}>
+      Toggle FirstName
+    </button>
+  
+    {{input value=firstName}}
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="foo" style="display: inline-block; display: none">
+    {{#if b}}
+      {{#modal-thing}}
+        The Value: {{lastName}}
+        <button {{action 'toggleLastName'}}>
+          close
+        </button>
+      {{/modal-thing}}
+    {{/if}}
+
+    <button {{action "togglelastName"}}>
+      Toggle LastName
+    </button>
+  
+    {{input value=lastName}}
+  </div>
+  </div>
+</div>

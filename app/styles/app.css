@@ -1,3 +1,17 @@
 html, body {
   margin: 20px;
 }
+
+.modal-inner {
+  background: gray;
+  border: 1px solid blue;
+}
+
+#wrapper {
+  width: 250px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: blue;
+  height: 400px;
+  padding-top: 10em;
+}
